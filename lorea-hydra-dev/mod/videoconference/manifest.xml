@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        
+
+<field key="author" value="Panos" />
+        
+
+<field key="version" value="1.0" />
+        
+
+<field key="description" value="VideoConference for Elgg"/>
+        
+
+<field key="website" value="" />
+        
+
+<field key="licence" value="GNU Public License version 2" />
+        
+
+<field key="elgg_version" value="2010071002" />
+</plugin_manifest>

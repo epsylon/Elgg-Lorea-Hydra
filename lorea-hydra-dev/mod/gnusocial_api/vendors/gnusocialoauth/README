@@ -1,0 +1,46 @@
+GNUSocialOAuth
+------------
+
+PHP library for working with GNUSocial's OAuth API.
+
+Flow Overview
+=============
+
+1. Build GNUSocialOAuth object using client credentials.
+2. Request temporary credentials from GNUSocial.
+3. Build authorize URL for GNUSocial.
+4. Redirect user to authorize URL.
+5. User authorizes access and returns from GNUSocial.
+6. Rebuild GNUSocialOAuth object with client credentials and temporary credentials.
+7. Get token credentials from GNUSocial.
+8. Rebuild GNUSocialOAuth object with client credentials and token credentials.
+9. Query GNUSocial API.
+
+Terminology
+===========
+
+The terminology has changed since 0.1.x to better match the draft-hammer-oauth IETF
+RFC. You can read that at http://tools.ietf.org/html/draft-hammer-oauth. Some of the
+terms will differ from those GNUSocial uses as well.
+
+client credentials - Consumer key/secret you get when registering an app with GNUSocial.
+temporary credentials - Previously known as the request token.
+token credentials - Previously known as the access token.
+
+Parameters
+==========
+
+There are a number of parameters you can modify after creating a GNUSocialOAuth object.
+
+Switch an existing GNUSocialOAuth install for another API.
+
+    $connection->$host = "https://yourgnusocial.com/api/";
+
+Custom useragent.
+
+    $connection->useragent = 'Custom useragent string';
+
+Verify GNUSocials SSL certificate.
+
+    $connection->ssl_verifypeer = TRUE;
+

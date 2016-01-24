@@ -1,0 +1,52 @@
+# PHP project
+language: php
+
+# which versions of PHP to build with
+php:
+- 5.5
+
+# set global environment variables
+env:
+  global:
+    # make PROJECTNAME from vendor/project
+    # this strips everything before the last /
+    - PROJECTNAME=${TRAVIS_REPO_SLUG##*/}
+
+# make sure we have the latest version of composer
+before_install:
+- composer self-update
+
+# install dependencies
+install:
+- composer install
+
+# no phpunit tests (yet)
+script: true
+
+# no email notifications
+notifications:
+  email: false
+
+# before deployment make the zipfile to upload
+before_deploy:
+ # don't install dev packages
+ - composer install --no-dev
+ # go down one directory
+ - cd ..
+ # exclude all .git directories
+ - zip -r $PROJECTNAME/${PROJECTNAME}_$TRAVIS_TAG.zip $PROJECTNAME -x $PROJECTNAME/.git/**\* $PROJECTNAME/.git/ $PROJECTNAME/**/.git/**\* $PROJECTNAME/**/.git/
+ # return to the main directory for the next step
+ - cd $PROJECTNAME
+
+# deployment settings
+deploy:
+  provider: releases
+  api-key:
+    secure: BnaEH4XJrO5iW31KNCmDixQBXxkmWMJ+joulCv5BmD4NoE2SuNtWveg2z7aqNfy43gG4aqQZFn/FSPBdpJGLKCxgCSFEgNB++5kYuyqKPhs4N/LA0jizuHyon2meeyfrnBXiTFh3uOr1eOmMH7u5mNy39kPEnCdn10bt16ZCxqk=
+  # name of the zip to upload
+  file: ${PROJECTNAME}_$TRAVIS_TAG.zip
+  skip_cleanup: true
+  on:
+    # only when a tag is created in GitHub
+    tags: true
+    all_branches: true

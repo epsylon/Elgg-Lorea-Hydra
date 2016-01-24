@@ -1,0 +1,20 @@
+== VERSION HISTORY ==
+
+2.0.1 (09/26/2015):
+ - compatibility 1.9 through 1.12
+
+2.0.0 (09/25/2015):
+ - upgrade for Elgg 1.9
+ - protect anonymous user pages with admin_gatekeeper
+ - remove custom settings for styling anonymous user - use core profile/settings/avatar page
+ - remove user hover menu for anonymous entirely (as of Elgg 1.11)
+ - removes recaptcha (use recaptcha plugin)
+ - optional add to river setting
+ - much code cleanup
+ - more secure email moderation links
+
+1.0 -
+- combines moderated_comments and speak_freely plugins
+- adds required email field that is only sent in notifications, along with the IP address of the poster. These are not permanently stored - they are to help the owner contact the poster by email if needed.
+- implements stopforumspam integration to prevent known spammers from adding comments
+- prevents saving of URLs or other rich text formatting beyond simple bold, italic, etc.
