@@ -1,0 +1,14 @@
+{
+	"name": "coldtrick/account_removal",
+	"description": "Offers users the ability to remove their account from the network",
+	"type": "elgg-plugin",
+	"keywords": ["elgg", "plugin", "tools"],
+	"license": "GPL-2.0",
+	"support": {
+		"source": "https://github.com/ColdTrick/account_removal",
+		"issues": "https://github.com/ColdTrick/account_removal/issues"
+	},
+	"require": {
+		"composer/installers": "^1.0.8"
+	}
+}

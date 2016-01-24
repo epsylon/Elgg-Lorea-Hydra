@@ -1,0 +1,108 @@
+Version history
+===============
+
+2.0:
+
+- changed: LinkedIn library to https://github.com/ashwinks/PHP-LinkedIn-SDK
+- changed: updated Facebook PHP SDK to version 4.0
+- removed: support for OpenBibID
+- removed: support for Hyves
+
+1.2.1 (2015-01-14):
+
+- applied Elgg coding standards
+
+1.2 (2013-04-05):
+
+- added: WordPress support
+- fixed: small bug in twitter library
+- fixed: walled garden support
+- fixed: potential 404 page while login
+- fixed: facebook account not automaticly validated
+- fixed: invalid forward on failed loggin
+- fixed: auto generation of username now always makes valid usernames
+- changed: handling of plugin usersettings
+- changed: layout of start.php to be more inline with Elgg
+
+1.1 (2012-03-02):
+
+- added: proxy settings
+- added: proxy support for Facebook
+- added: proxy support for Twitter
+- added: proxy support for LinkedIn
+- added: proxy support for Hyves
+- added: OpenBibID support
+- fixed: small error in removing Twitter connection
+- fixed: potential Apache/PHP warning
+- changed: admin layout
+
+1.0 (2012-02-23):
+
+- added: login will return to referer
+- added: Twitter icon sync if user has no icon
+- added: LinkedIn icon sync if user has no icon
+- added: Facebook icon sync if user has no icon
+- added: Hyves icon sync if user has no icon
+- fixed: create account system message problem
+- fixed: problems with Hyves login
+- fixed: forwarding error on non linked accounts
+- fixed: performance of socialink_get_available_networks()
+- fixed: no profile data sync after no linked account -> link
+- fixed: no profile data sync after no linked account -> create
+- fixed: potential apache/php warning is some functions
+- changed: required Elgg version now 1.8.3
+
+1.0 beta 2 (2011-10-26):
+
+- added: support for hyves social network (http://www.hyves.nl)
+- changed: made some code more effecient
+- changed: language keys to be more generic
+
+1.0 beta 1 (2011-10-25):
+
+- changed: Facebook PHP SDK to version 3.1.1 (was 2.1.2)
+- changed: LinkedIn libary to version 3.1.1 (was 3.0.1)
+- changed: OAuth libary moved to own folder
+- changed: plugin now Elgg 1.8 ready
+
+0.5.1 (2011-08-05):
+
+- fixed: create user caching issue
+- fixed: login didn't work in some site setups
+
+0.5 (2011-06-22):
+
+- added: Twitter to The Wire (with admin and user settings)
+- added: option to directly link social media account with site account
+- changed: layout of plugin views
+- fixed: fancybox css
+
+0.4.1 (2011-05-26):
+
+- changed: better selection of profile fields
+- fixed: Fancybox CSS error in IE
+
+0.4 (2011-05-12):
+
+- added: LinkedIn name (combination of firstname and lastname)
+- changed: login with network layout
+- changed: login with network error message
+
+0.3 (2011-04-27):
+
+- added: check on login if connections to social networks are still valid, if not they are removed 
+- added: view to show share buttons to all connected networks
+- added: function to retrieve all the networks a user is connected to
+
+0.2 (2011-04-26):
+
+- added: option to create an account from LinkedIn
+- added: option to create an account from Facebook
+- added: option to create an account from Twitter
+- added: option to sync profile data from LinkedIn
+- added: option to sync profile data from Facebook
+- added: option to sync profile data from Twitter
+
+0.1 (2011-03-01):
+
+- initial release

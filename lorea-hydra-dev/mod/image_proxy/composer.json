@@ -1,0 +1,19 @@
+{
+    "name": "beck24/image_proxy",
+    "type": "elgg-plugin",
+    "description": "Proxy scheme for http images embedded in https elgg sites",
+    "homepage": "https://github.com/beck24/image_proxy",
+    "keywords": ["elgg", "plugin", "image", "image proxy"],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Matt Beckett"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/beck24/image_proxy/issues"
+    },
+    "require": {
+        "composer/installers": ">=1.0.8"
+    }
+}

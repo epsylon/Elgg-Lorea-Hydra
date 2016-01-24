@@ -1,0 +1,31 @@
+Version History
+===============
+
+2.0 (2015-01-22):
+
+- changes for Elgg 1.9
+
+1.0.2 (2015-01-22):
+
+- applied Elgg coding standards
+
+1.0.1 (2013-04-05):
+
+- changed: README.txt to README.md for GitHub
+- fixed: depricated notice
+
+1.0 (2012-01-23):
+
+- Elgg 1.8 version of this plugin
+
+0.2.1 (2011-05-03):
+
+- fixed: group owner check for multi site
+
+0.2 (2011-02-10):
+
+- added: confirmation mails
+
+0.1 (2010-11-23):
+
+- first release

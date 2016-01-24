@@ -1,0 +1,24 @@
+Version History
+===============
+
+3.0 (2015-07-08):
+
+- changes for Elgg 1.10
+- added: block subscription cache for optimization
+- added: composer support
+- added: plugin setting to auto subscribe on Like
+- changed: optimized check user notification setting
+- fixed: incorrect fallback check
+
+2.0 (2014-11-17):
+
+- changes for Elgg 1.9
+- rewrote the entire plugin to use the new Elgg subscriptions system
+- added: support for more entity types
+- fix(php): php warning is some cases is
+- fix(js): change the correct toggle values
+- changed(ui): ajaxified the content subscription sidebar
+
+1.0:
+
+- initial release

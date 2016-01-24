@@ -1,0 +1,14 @@
+== Version History ==
+
+x.x (mm/dd/yyyy)
+
+1.2.0 (09/23/2015):
+ - upgrade for 2.0 settings
+ - add default fallback image
+ - use sha1 for generating token
+
+1.1 (09/08/2015):
+ - add rewrite for images served over http on the same domain (sites upgraded to https)
+
+1.0
+ - initial release

@@ -1,0 +1,6 @@
+[submodule "vendors/etherpad-lite-client"]
+	path = vendors/etherpad-lite-client
+	url = git://github.com/TomNomNom/etherpad-lite-client.git
+[submodule "vendors/etherpad-lite-jquery"]
+	path = vendors/etherpad-lite-jquery
+	url = git://github.com/johnyma22/etherpad-lite-jquery-plugin.git
