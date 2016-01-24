@@ -1,0 +1,365 @@
+<?php
+
+	$russian = array(
+	
+	'item:object:event_calendar' => "Календарь",
+	'tag_names:event_tags' => "Теги",
+	'event_calendar:optional' => "Опционально.",
+	'event_calendar:required' => "Обязательно.",
+	'event_calendar:new_event' => "Новое событие",
+	'event_calendar:no_such_event_edit_error' => "Ошибка: Нет такого события или у вас нет прав на его редактирование.",
+	'event_calendar:add_event_title' => "Добавить событие",
+	'event_calendar:manage_event_title' => "Изменить событие",
+	'event_calendar:manage_event_description' => "Введите детали вашего события. "
+		."Название, место и дата начала обязательны. "
+		."Вы можете нажать на иконки календаря, чтобы установить начальную и конечную даты.",
+	'event_calendar:title_label' => "Название",
+	'event_calendar:title_description' => "От одного до четырех слов",
+	'event_calendar:brief_description_label' => "Краткое описание",
+	'event_calendar:brief_description_description' => "Короткая фраза.",
+	'event_calendar:venue_label' => "Место",
+	'event_calendar:venue_description' => "Где это событие будет проходить?",
+	'event_calendar:start_date_label' => "Дата начала",
+	'event_calendar:start_date_description'	=> "Когда это событие начнется?",
+	'event_calendar:end_date_label' => "Дата окончания",
+	'event_calendar:end_date_description'	=> "Когда событие закончится? Будет использована дата начала "
+		."если не будет указано явно.",
+	'event_calendar:start_time_label' => "Время начала",
+	'event_calendar:start_time_description'	=> "В какое время событие начинается?",
+	'event_calendar:end_time_label' => "Время окончания",
+	'event_calendar:end_time_description'	=> "В какое время событие закончится?",
+	'event_calendar:fees_label' => "Стоимость",
+	'event_calendar:fees_description'	=> "Стоимость мероприятия, если есть.",
+	'event_calendar:contact_label' => "Контакт",
+	'event_calendar:contact_description'	=> "Лицо с которым можно связаться для уточнения информации, "
+			."желательно с номером телефона или email адресом.",
+	'event_calendar:organiser_label' => "Организатор",
+	'event_calendar:organiser_description'	=> "Лицо или организация, отвечающая за событие.",
+	'event_calendar:event_tags_label' => "Теги",
+	'event_calendar:event_tags_description'	=> "Список тегов, относящихся к этому событию, разделенный запятыми.",
+	'event_calendar:long_description_label' => "Детальное описание",
+	'event_calendar:long_description_description'	=> "Может быть параграф или больше, сколько потребуется.",
+	'event_calendar:manage_event_response' => "Ваше событие сохранено.",
+	'event_calendar:add_event_response' => "Ваше событие добавлено.",
+	'event_calendar:manage_event_error' => "Ошибка: При сохранении возникла ошибка. "
+			."Пожалуйста, удостоверьтесь, что вы указали все обязательные поля.",
+	'event_calendar:error_nosuchevent' => "Ошибка: нет такого события.",
+	'event_calendar:show_events_title' => "Календарь",
+	'event_calendar:day_label' => "День",
+	'event_calendar:week_label' => "Неделя",
+	'event_calendar:month_label' => "Месяц",
+	'event_calendar:group' => "Календарь группы",
+	'event_calendar:new' => "Добавить событие",
+	'event_calendar:submit' => "Отправить",
+	'event_calendar:cancel' => "Отменить",
+	'event_calendar:widget_title' => "Календарь",
+	'event_calendar:widget:description' => "Отображает ваши события.",
+	'event_calendar:num_display' => "Количество событий",
+	'event_calendar:events_type' => "Показывать",
+	'event_calendar:personal_events' => "Персональные",
+	'event_calendar:all_events' => "Все активные",
+	'event_calendar:groupprofile' => "Предстоящие события",
+	'event_calendar:view_calendar' => "просмотр календаря",
+	'event_calendar:when_label' => "Когда",
+	'event_calendar:site_wide_link' => "Просмотреть все события",
+	'event_calendar:view_link' => "Просмотреть событие",
+	'event_calendar:edit_link' => "Изменить событие",
+	'event_calendar:delete_link' => "Удалить событие",
+	'event_calendar:delete_response' => "Событие было удалено.",
+	'event_calendar:error_delete' => "Такого события не существует или у вас нет прав на его удаление.",
+	'event_calendar:delete_cancel_response' => "Удаление события отменено.",
+	'event_calendar:add_to_my_calendar' => "Добавить в мой календарь",
+	'event_calendar:remove_from_my_calendar' => "Убрать мз моего календаря",
+	'event_calendar:add_to_my_calendar_response' => "Событие было добавлено в Ваш личный календарь.",
+	'event_calendar:add_to_my_calendar_error' => "Событие не может быть добавлено в Ваш персональный каледарь. "
+				."(Возможно событие уже заполнено или совпадает по времени с другим событием в Вашем персональном календаре?)",
+	'event_calendar:remove_from_my_calendar_response' => "Событие было удалено из Вашего персонального календаря.",
+	'event_calendar:add_to_the_calendar' => "Добавить в календарь",
+	'event_calendar:remove_from_the_calendar' => "Убрать",
+	'event_calendar:add_to_the_calendar_menu_text' => "Добавить в мой",
+	'event_calendar:remove_from_the_calendar_menu_text' => "Убрать из моего",
+	'event_calendar:remove_from_the_calendar_button' => "Убрать из календаря",
+	'event_calendar:added_to_the_calendar' => "Добавлено в календарь",
+	'event_calendar:removed_from_the_calendar' => "Удалено из календаря",
+	'event_calendar:add_to_the_calendar_response' => "Событие добавлено в календарь.",
+	'event_calendar:add_to_the_calendar_error' => "Это событие не может быть добавлено в календарь этой персоны. "
+				."(Возможно, событие уже заполнено или запланировано на время, совпадающее со временем другого события в календаре этой персоны)",
+	'event_calendar:remove_from_the_calendar_response' => "Событие удалено из календаря этой персоны.",
+				
+	'event_calendar:users_for_event_menu_title' => "Люди, регистрирующие это событие в своих календарях",
+	'event_calendar:users_for_event_title' => "Персональные календари \"%s'\"",
+	'event_calendar:personal_event_calendars_link' => "В %s календарях",
+	'event_calendar:personal_event_calendars_link_one' => "В 1 календаре",
+	'event_calendar:users_for_event_breadcrumb' => "Персональные календари",
+	'event_calendar:settings:group_profile_display:title' => "Окно профиля календарей группы (если календари группы разрешены)",
+	'event_calendar:settings:group_profile_display_option:left' => "левая колонка",
+	'event_calendar:settings:group_profile_display_option:right' => "правая колонка",
+	'event_calendar:settings:group_profile_display_option:none' => "никакая",
+	'event_calendar:settings:times:title' => "Добавить время и дату к событиям",
+	'event_calendar:settings:autopersonal:title' => "Автоматически добавлять события, которые пользователь создает в своем календаре.",
+	'event_calendar:settings:autogroup:title' => "Автоматически добавлять групповые события в персональные календари всех членов группы.",
+	'event_calendar:settings:agenda_view:title' => "Использовать вид План",
+	'event_calendar:settings:venue_view:title' => "Показывать место проведения в итоговом виде (списки событий)",
+	'event_calendar:settings:yes' => "да",
+	'event_calendar:settings:no' => "нет",
+	'event_calendar:settings:site_calendar:title' => "Календарь сайта",
+	'event_calendar:settings:site_calendar:admin' => "да, только администраторы могут отправлять события",
+	'event_calendar:settings:site_calendar:loggedin' => "да, только вошедшие пользователи могут отправлять события",	
+	'event_calendar:settings:group_calendar:title' => "Календари группы",
+	'event_calendar:settings:group_calendar:admin' => "да, только администраторы и владельцы групп могут отправлять события",
+	'event_calendar:settings:group_calendar:members' => "да, только члены групп могут отправлять события",
+	'event_calendar:settings:group_default:title' => "По умолчанию новые группы должны иметь календарь группы (если календари группы разрешены)",
+	'event_calendar:settings:group_default:no' => "нет (но администраторы или владельцы групп могут разрешить календари группы)",
+	'event_calendar:settings:group_default:yes' => "да (но администраторы или владельцы групп могут запретить календари группы)",
+	'event_calendar:settings:group_always_display:title' => "Всегда показывать календарь группы, если календари группы разрешены (даже если он пустой)",
+	'event_calendar:settings:region_display:title' => "Добавить поле Регион в события",
+	'event_calendar:settings:region_list:title' => "Список регионов (один на строку)",
+	'event_calendar:region_label' => "Регион",
+	'event_calendar:region_description' => "Выбрать регион, где будет проводиться событие.",
+	'event_calendar:settings:type_display:title' => "Добавить тип события",
+	'event_calendar:settings:type_list:title' => "Список типов событий (один на строку)",
+	'event_calendar:type_label' => "Тип события",
+	'event_calendar:type_description' => "Выбрать тип события.",
+	'event_calendar:all' => "Все",
+	'event_calendar:region_filter_by_label' => "Фильтровать по региону: ",
+	'event_calendar:settings:first_date:title' => "Первая разрешенная дата (в формате ГГГГ-ММ-ДД)",
+	'event_calendar:settings:last_date:title' => "Последняя разрешенная дата (в формате ГГГГ-ММ-ДД)",
+	'event_calendar:enable_event_calendar' => "Включить календарь группы",
+	'event_calendar:no_events_found' => "Не найдено ни одного события.",
+	'event_calendar:mine' => "Мои",
+	'event_calendar:feature' => "Свойства",
+	'event_calendar:unfeature' => "Unfeature",
+	'event_calendar:agenda:column:time' => "Время",
+	'event_calendar:agenda:column:session' => "Сессия",
+	'event_calendar:agenda:column:venue' => "Место",
+	'event_calendar:upcoming_events_title' => "Предстоящие события",
+	'event_calendar:settings:paged' => "постранично",
+	'event_calendar:settings:agenda' => "план",
+	'event_calendar:settings:month' => "по месяцам",
+	'event_calendar:settings:full' => "полный вид",
+	'event_calendar:settings:listing_format:title' => "Формат списка событий",
+	'event_calendar:paged:column:date' => "Дата",
+	'event_calendar:paged:column:time'	=> "Время",
+	'event_calendar:paged:column:event' => "Событие",
+	'event_calendar:paged:column:venue' => "Место",
+	'event_calendar:paged:column:calendar' => "Календарь",
+	'event_calendar:settings:spots_display:title' => "Добавить поле Количество к каждому "
+			."чтобы ограничить количество людей, которые могут добавить событие к себе в календари",
+	'event_calendar:settings:no_collisions:title' => "Определение конфликтов: запретить людям добавлять в календари два события с пересекающимися временами",
+	'event_calendar:settings:collision_length:title' => "Какую длительность (в секундах) выставлять событию, если не установлена его конечная дата или время "
+		."(используется для определения конфликтов). По умолчанию 3600 секунд = 1 час.",
+	'event_calendar:spots_label' => "Количество",
+	'event_calendar:spots_description' => "Скольким людям разрешено добавить это событие в свои персональные календари?",
+	'event_calendar:open' => "Открыт",
+	'event_calendar:settings:add_users:title' => "Разрешить создателям события и администраторам сайта добавлять свои события в другие персональные календари.",
+	'event_calendar:add_user_label' => "Добавить пользователей",
+	'event_calendar:add_user_description' => "Добавить это событие в персональные календари, выбирая пользователя в поле с автозаполнением выше. "
+		."Вы можете добавить нескольких пользователей, нажимая на ссылку \"+\". (Вы должны отправить эту форму, чтобы добавить событие в календари.)",		
+	'event_calendar:settings:add_users_notify:title' => "Уведомить по электронной почте тех пользователей, которым администраторы сайта или создатель события добавили событие в персональный календарь.",
+	'event_calendar:add_users_notify:subject' => "В ваш персональный календарь добавлено новое событие",
+	'event_calendar:add_users_notify:body' => "%s,\n\nСобытие \"%s\" было добавлено в ваш календарь.\n\nВы можете посмотреть его здесь: \n\n%s\n",
+		
+	'event_calendar:settings:region_list_handles:title' => "Строки регионов выше - это строковые десктипторы. Используйте систему переводов Elgg для их разрешения.",
+	'event_calendar:settings:type_list_handles:title' => "Строки типов выше - это строковые десктипторы. Используйте систему переводов Elgg для их разрешения.",
+		
+	'event_calendar:settings:personal_manage:title' => "Допуски календаря",
+	'event_calendar:settings:personal_manage:description' => "Определяет, могут ли пользователи добавлять события в свои персональные календари (открытое), "
+			."необходим запрос создателю события, чтобы сделать это (закрытое), невозможно вообще (частное), или позволить создателю события определять это для каждого события (по событию). "
+			."Примечание. Если вы устанавливаете это в Частное, то, возможно, следует активировать опцию, позволяющую создателю события или администраторам сайта "
+			."добавлять свои события в персональные календари других пользователей.",
+	'event_calendar:strapline' => "Опубликовал(а) %s %s",
+		
+	'event_calendar:request_event_response' => "Ваш запрос на добавление к этому событию был отправлен.",
+	'event_calendar:request_event_error' => "Ошибка: ваш запрос на добавление к этому событию не может быть отправлен.",
+	'event_calendar:request_subject' => "Вы получили запрос по событию",
+	'event_calendar:request_message' => "%s просит разрешить добавить событие \"%s\", здесь:
+
+%s
+
+в свой персональный календарь.
+
+Вы можете управлять календарными запросами на это событие тут:
+
+%s
+",
+		
+	'event_calendar:review_requests_error' => "Либо это событие не существует, либо у вас нет полномочий подтверждать запрос на него.",
+	'event_calendar:review_requests_request_none' => "Для этого события нет запросов на обзор.",
+	'event_calendar:request:remove:check' => 'Вы уверены, что хотите отклонить этот запрос?',
+	'event_calendar:requestkilled' => 'Этот запрос был отклонен.',
+	'event_calendar:request_approved' => "Этот запрос был подтвержден.",
+	'event_calendar:review_requests_title' => "Обзор запросов на \"%s\"",
+	'event_calendar:review_requests_menu_title' => "Обзор запросов",
+	'event_calendar:make_request_title' => 'Запросить это событие',
+	'event_calendar:review_requests:reject' => "Отклонить",
+	'event_calendar:review_requests:reject:title' => "Отклонить этот запрос",
+	'event_calendar:review_requests:accept' => "Принять",
+	'event_calendar:review_requests:accept:title' => "Принять этот запрос",
+	'event_calendar:review_requests:error:approve' => "Ошибка: не могу подтвердить этот запрос.",
+	'event_calendar:review_requests:error:reject' => "Ошибка: не могу отклонить этот запрос.",
+		
+	'event_calendar:settings:hide_access:title' => "Скрыть выпадающий элемент с доступом к событию",
+	'event_calendar:settings:default_access:title' => "Какое должно быть значение по умолчанию, если доступ к событию скрыт?",
+	'event_calendar:settings:hide_end:title' => "Скрыть поля даты и времени окончания",
+	'event_calendar:settings:more_required:title' => "Сделать обязательными все видимые поля, кроме долгих описаний.",
+		
+	'event_calendar:add_to_group:remove_group_title' => "Удалить это событие из группы",
+	'event_calendar:add_to_group:remove_group_button' => "Удалить из группы",
+	'event_calendar:remove_from_group:success' => "Событие удалено из календаря группы",
+	'event_calendar:add_to_group:add_group_title' => "Добавить это событие в группу",
+	'event_calendar:add_to_group:add_group_button' => "Добавить в группу",
+	'event_calendar:add_to_group:success' => "Событие добавлено в календарь группы",
+	'event_calendar:settings:add_to_group_calendar:title' => "Разрешить администраторам группы добавлять любое существующее событие в календарь группы",
+		
+	'event_calendar:group_breadcrumb' => "Календарь группы",
+	'event_calendar:no_group' => "Такой группы не существует.",
+	'event_calendar:generic_error_title' => "Ошибка",
+	'event_calendar:error_event_edit' => "Ошибка: либо такого события не существует, либо у вас нет разрешения ее редактировать.",
+	'event_calendar:add' => "Добавить",
+		
+	'feed:ical' => "Лента iCal для этой страницы",
+	'event_calendar:ical_popup_message' => "Вы можете использовать следующую ссылку, чтобы получить ленту iCalendar на все общие события из следующего списка: ",
+	'event_calendar:ical_auth_file_name:title' => "Путь к файлу идентификации iCal в локальной файловой системе (экспериментально - не нужна для общих лент)",
+
+	'event_calendar:owner:permissions_error' => "У вас нет разрешения для просмотра этой страницы.",
+	'event_calendar:feature_not_activated' => "Эта возможность не активирована",
+		
+	'event_calendar:show_all' => "Показать все",
+	'event_calendar:show_open' => "Показать открытые",
+	'event_calendar:show_mine' => "Мой календарь",
+	'event_calendar:show_friends' => "Календарь друзей",
+	'event_calendar:show_only' => "Показывать только:",
+		
+	'event_calendar:listing_title:all' => "Все события",
+	'event_calendar:listing_title:open' => "Открытые события",
+	'event_calendar:listing_title:mine' => "Мой календарь",
+	'event_calendar:listing_title:friends' => "Календари друзей",	
+	'event_calendar:manage_users:title' => "Управлять подписчиками на \"%s\"",
+	'event_calendar:manage_users:breadcrumb' => "Управлять подписчиками",
+	'event_calendar:manage_users:description' => "Добавить или удалить события из персональных календарей.",
+	'event_calendar:manage_users:unauthorized' => "Ошибка: вы не уполномочены управлять персональными календарями для этого события.",
+	'event_calendar:add_to_group_members:success' => "Это событие было добавлено в персональные календари всех членов группы.",
+	'event_calendar:add_to_group_members:error' => "Ошибка: не могу добавить это событие в персональные календари членов группы.",
+	'event_calendar:remove_from_group_members:success' => "Это событие было удалено из персональных календарей всех членов группы.",
+	'event_calendar:remove_from_group_members:error' => "Ошибка: не могу удалить это событие из персональных календарей членов группы.",
+	'event_calendar:add_to_group_members:button' => "Добавить всем",
+	'event_calendar:remove_from_group_members:button' => "Удалить из всех",
+		
+	'event_calendar:manage_subscribers:success' => "Персональный календарь обновлен.",
+	'event_calendar:manage_subscribers:error' => "Ошибка: не могу обновить персональный календарь.",
+	'event_calendar:personal_manage:open' => "открытый",
+	'event_calendar:personal_manage:closed' => "закрытый",
+	'event_calendar:personal_manage:private' => "приватный",
+	'event_calendar:personal_manage:by_event' => "по событию",
+	'event_calendar:personal_manage:label' => "Доступ к календарю",
+	'event_calendar:personal_manage:description' => "Определяет, может ли пользователь добавить это событие в свой календарях (открытый),"
+			."требуется разрешние (закрытый) или не имеет возможности добавить вообще (приватное - такм образом только вы или сайт-админ могут добавять событие в календари).",
+	'event_calendar:personal_manage:by_event:open' => "Открытое. Пользователи могут свободно добавлять это событие в свои персональные календари.",
+	'event_calendar:personal_manage:by_event:closed' => "Закрытое. Пользователи могут отправлять запрос, чтобы добавить это событие в свои персональные календари. Вы можете просматривать и подтверждать эти запросы.",
+	'event_calendar:personal_manage:by_event:private' => "Частное. Вы или другой администратор события должны добавить это событие в персональные календари. У других пользователей нет возможности послать запрос на это событие.",
+			
+	'event_calendar:settings:full_calendar:title' => "Поддержка полного календаря",
+	'event_calendar:modify_full_calendar:error' => "Ошибка: не могу изменить весь календарь",
+	'event_calendar:from_label' => "С: ",
+	'event_calendar:to_label' => "По: ",
+	'event_calendar:settings:timeformat:title' => "Формат времени",
+	'event_calendar:time_format:12hour' => "12 часовой (am/pm)",
+	'event_calendar:time_format:24hour' => "24 часовой",
+	'event_calendar:all_day_label' => "Весь день",
+	'event_calendar:repeat_interval_label' => "Повторять каждые",
+	'event_calendar:repeat_weeks' => "неделю(и)",
+	'event_calendar:on_these_days' => "в эти дни:",
+	'event_calendar:day_abbrev:monday' => "П",
+	'event_calendar:day_abbrev:tuesday' => "В",
+	'event_calendar:day_abbrev:wednesday' => "С",
+	'event_calendar:day_abbrev:thursday' => "Ч",
+	'event_calendar:day_abbrev:friday' => "П",
+	'event_calendar:day_abbrev:saturday' => "С",
+	'event_calendar:day_abbrev:sunday' => "В",
+	'event_calendar:dow:full:monday' => "Понедельник",
+	'event_calendar:dow:full:tuesday' => "Вторник",
+	'event_calendar:dow:full:wednesday' => "Среда",
+	'event_calendar:dow:full:thursday' => "Четверг",
+	'event_calendar:dow:full:friday' => "Пятница",
+	'event_calendar:dow:full:saturday' => "Суббота",
+	'event_calendar:dow:full:sunday' => "Воскресенье",
+	'event_calendar:schedule_type:poll' => "Сделать опрос приглашенных про день/время",
+	'event_calendar:schedule_type:fixed' => "Установить день/время",
+	'elgg_calendar:send_reminder_label' => "Отправить напоминание",
+	'elgg_calendar:send_reminder_before' => "перед",
+	'event_calendar:interval:minute' => "менут",
+	'event_calendar:interval:hour' => "часов",
+	'event_calendar:interval:day' => "дней",
+	'event_calendar:site_calendar' => "Календарь сайта",
+	'event_calendar:calendar_label' => "Календарь",
+	'event_calendar:calendar_description' => "Календарь для этого события.",
+	'event_calendar:are_you_sure' => "Вы уверены в этом изменении?",
+	'event_calendar:basic:header' => "Общая информация",
+	'event_calendar:schedule:header' => "Расписание",
+	'event_calendar:permissions:header' => "Разрешения",
+	'event_calendar:read_access' => "Доступ на чтение ",
+	'event_calendar:web_conference_label' => "Подключить веб-конференцию для этого события",
+	'event_calendar:share_ownership:label' => "Добавить еще владельцев этого события",
+	'event_calendar:share_ownership:description' => "Разрешить следующим людям редактировать или удалять это событие, приглашать участников",
+	'event_calendar:settings:fewer_fields:title' => "Скрыть платежную информацию, контакты, органайзер и длинные описательные поля",
+	'event_calendar:settings:restricted_times:title' => "Ограниченное время между 6:00 and 21:00",
+	'event_calendar:add_event' => "Добавить событие",
+	'event_calendar:schedule_event' => "Расписание события",
+	'event_calendar:list_polls' => "Показать голосования",
+	'event_calendar:edit_form:error:missing_title' => "Ошибка: укажите название",
+	'event_calendar:repeated_event:week_interval' => "каждые %s недели.",
+	'event_calendar:repeated_event:week_single' => "каждую неделю.",
+	'event_calendar:repeated_event:format' => "Начинать с %s и продолжать по %s",
+	'event_calendar:settings:repeated_events:title' => "Разрешить повторяющиеся события (сейчас работает нормально только в режиме полного календаря)",
+	'event_calendar:settings:reminders:title' => "Разрешить отправку напоминаний",
+	'event_calendar:reminder:subject' => "Напоминане о событии: %s",
+	'event_calendar:reminder:body' => "Событие
+
+%s 
+
+будет проходть в 
+
+%s.
+	
+Вы можете просмотреть страницу события тут:
+%s
+	",
+			
+	/**
+	 * BBB support
+	*/
+			
+	'event_calendar:bbb_server_url' => "Адрес сервера Big Blue Button (должен заканчиваться косой чертой)",
+	'event_calendar:bbb_security_salt' => "Случайное число безопасности Big Blue Button",
+	'event_calendar:bbb_create_error' => "Ошибка: невозможно создать конференцию BBB, сообщение: %s",
+	'event_calendar:conference_create_error' => "Ошибка: невозможно создать веб-конференцию.",
+	'event_calendar:bbb_settings_error' => "Ошибка: необходимо установить адрес конференции и случайное число в настройках плагина",
+	'event_calendar:couldnotjoin' => "Ошибка: невозможно присоединиться к конференции.",
+	'event_calendar:join_conf_button' => "Присоединиться к конференции",
+			
+	'event_calendar:poll_suffix' => "(опрос)",
+	'event_calendar:resend_poll_invitation' => "Вы хотите предупредить приглашенных пользователей, что эти опции изменились?",
+		
+	/**
+	 * Event calendar river
+	 **/
+			 
+	//generic terms to use
+
+	'river:update:object:event_calendar' => "%s обновил событие %s",
+	'river:create:object:event_calendar' => "%s добавил событие %s",
+	'river:comment:object:event_calendar' => '%s оставил комментарий на событие %s',
+    'event_calendar:river:created' => "%s добавлено",
+    'event_calendar:river:updated' => "%s обновлено",
+    'event_calendar:river:annotated1' => "%s добавил",
+	'event_calendar:river:annotated2' => "в его/ее календарь.",
+	 
+	//these get inserted into the river links to take the user to the entity
+    'event_calendar:river:create' => "новое событие",
+    'event_calendar:river:the_event' => "событие",
+
+	);
+					
+	add_translation("ru",$russian);
+
+?>

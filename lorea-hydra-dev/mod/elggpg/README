@@ -1,0 +1,30 @@
+GPG Support for elgg
+------------------------
+
+1. sudo apt-get install libgpgme11-dev make php5-dev php-pear # (Debian)
+2. sudo pecl install gnupg
+3. Write this line in php.ini: extension=gnupg.so
+4. Place the plugin under elgg/mod/elggpg
+
+NOTES:
+------------------------
+
+The plugin will manage its keys in a folder called "gpg" under the data folder
+for the site.
+
+The plugin goes along very well with firegpg. We recommend it so the user can
+decrypt data on his browser easier.
+
+TODO:
+------------------------
+- Investigate more ways to make gpg easier to use inside, or together with elgg.
+- Investigate how to safely have a privety key for the site which can't be easily
+  compromised.
+- Make groups where only people with a key can enter.
+- Allow entering into a site only when you have a given trust of other users (not really a goal).
+
+
+
+---
+devel@lorea.org
+

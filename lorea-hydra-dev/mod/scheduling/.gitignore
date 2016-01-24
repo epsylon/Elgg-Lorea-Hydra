@@ -1,0 +1,4 @@
+.*
+!.gitignore
+!.scrutinizer.yml
+!.tx
