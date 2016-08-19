@@ -1,0 +1,21 @@
+{
+	"name": "juho-jaakkola/elgg-notification_tools",
+	"description": "Provides notification related tools for Elgg site administrations.",
+	"type": "elgg-plugin",
+	"keywords": [
+		"elgg",
+		"plugin",
+		"notifications"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Juho Jaakkola",
+			"email": "juho.a.jaakkola@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"extra": {
+		"installer-name": "notification_tools"
+	}
+}

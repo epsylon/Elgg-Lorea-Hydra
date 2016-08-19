@@ -1,0 +1,10 @@
+{
+	"name"	   :"serega3000/elgg_gallery_field",
+	"type"	   :"elgg-plugin",
+	"require": {
+		"composer/installers": "*"
+	},
+    "extra": {
+        "installer-name": "gallery_field"
+    }	
+}

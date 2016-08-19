@@ -1,0 +1,20 @@
+{
+    "name": "au/au_group_notices",
+    "type": "elgg-plugin",
+    "description": "Allows group owners to add context-sensitive text notices to sidebar, base or top of group pages.",
+    "homepage": "https://github.com/AU-Landing-Project/au_group_notices",
+    "keywords": ["elgg", "plugin", "groups", "notices", "AU"],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Jon Dron"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/AU-Landing-Project/au_group_notices/issues"
+    },
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": ">=1.0.8"
+    }
+}

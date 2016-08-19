@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="vendors/jsenc/jsencryption.js"></script>
+	<script type="text/javascript" src="vendors/jsenc/jsencryptionform.js"></script>
+</head>
+<body onload="load()">
+	<div id="content" style="position: relative">
+		<form name="key" action="#" onsubmit="return false;">
+			<p align="center">
+			<h3>Secreto (recuerda, es cifrado simétrico; cuanto más largo sea, mejor...)</h3>
+			<input type="text" name="text" id="passwordText" maxlength="1024" />
+			<br />
+			<input type="button" value=" Random " onclick="document.key.text.value = randomPassword(8);" />
+			&nbsp;
+			<input type="button" value=" Limpiar " onclick="document.key.text.value = '';" />
+			&nbsp;
+			<input type="button" value=" Seleccionar " onclick="document.key.text.select();" />
+			</p>
+		</form>
+		<form name="plain" action="#" onsubmit="return false;">
+			<p align="center">
+			<h3>Texto que quieres cifrar</h3>
+			<textarea name="text" id="plainText" rows="5"></textarea>
+			<br />
+			<input type="button" name="Cifrar" value=" Encrypt " onclick="encryptFormText();" />
+			&nbsp;
+			<input type="button" value=" Limpiar " onclick="document.plain.text.value = '';" />
+			&nbsp;
+			<input type="button" value=" Seleccionar " onclick="document.plain.text.select();" />
+			</p>
+		</form>
+		<form name="cipher" action="#" onsubmit="return false;">
+			<p align="center">
+			<h3>Texto cifrado (resultado)</h3>
+			Cópialo y pégalo para usarlo. Solo quien conozca el secreto podrá abrirlo.<br/>
+			<textarea name="text" id="cipherText" rows="5"></textarea>
+			<br />
+<input type="button" name="decrypt" value=" Descifrar " onclick="decryptFormText();" />
+			&nbsp;
+			<input type="button" value=" Limpiar " onclick="document.cipher.text.value = '';" />
+			&nbsp;
+			<input type="button" value=" Seleccionar " onclick="document.cipher.text.select();" />
+			</p>
+		</form>
+	</div>
+</body>
+</html>

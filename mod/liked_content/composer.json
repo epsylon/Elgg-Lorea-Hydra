@@ -1,0 +1,20 @@
+{
+    "name": "au/liked_content",
+    "type": "elgg-plugin",
+    "description": "Displays liked content for users and groups",
+    "homepage": "https://github.com/AU-Landing-Project/liked_content",
+    "keywords": ["elgg", "plugin", "liked content", "AU"],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Matt Beckett"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/AU-Landing-Project/liked_content/issues"
+    },
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": ">=1.0.8"
+    }
+}

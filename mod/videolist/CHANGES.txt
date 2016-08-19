@@ -1,0 +1,14 @@
+Version 1.8.1
+(November 8, 2013 from https://github.com/lorea/videolist.git)
+
+ Enhancements
+  * Setting responsive dimensions.
+  * Making video thumbnails faster (thanks to ura soul).
+  * Do not display watching video in sidebar (thanks to ura soul).
+
+ Bugfixes
+  * Using https instead http in embeded videos.
+
+Version 1.8.0 (Foxglove)
+(September 13th, 2013 from git://github.com/lorea/videolist.git)
+

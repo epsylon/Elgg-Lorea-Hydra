@@ -1,0 +1,21 @@
+{
+    "name": "au/au_group_tag_menu",
+    "type": "elgg-plugin",
+    "description": "Adds a group submenu of specified tags and displays the results in the group context. Also adds group tagcloud with integrated listing in the group.",
+    "homepage": "https://github.com/AU-Landing-Project/au_analytics",
+    "keywords": ["elgg", "plugin", "tag", "groups", "AU"],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Jon Dron",
+            "name": "Matt Beckett"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/AU-Landing-Project/au_group_tag_menu/issues"
+    },
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": ">=1.0.8"
+    }
+}

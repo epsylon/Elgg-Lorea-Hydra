@@ -1,0 +1,20 @@
+== Version History ==
+
+x.x (mm/dd/yyyy):
+
+2.0.0 (10/17/2015):
+ - Elgg 1.9+ upgrade
+ - Added "All" option for sitewide list
+ - Added site menu item to link to above sitewide list
+
+1.2 (03/25/2013):
+ - adds sensible defaults for widgets in various contexts
+ - fixes 'my liked' option bug due to strict check for int(0) when it's actually a string
+ - adds number of likes to entity menu in liked_widget
+
+1.1 (03/18/2013):
+ - adds language string letting users know there is no liked content
+ - fixes bug in personal likes (now uses annotation_owner_guid instead of annotation_container_guid)
+
+1.0 (03/14/2013):
+ - initial release

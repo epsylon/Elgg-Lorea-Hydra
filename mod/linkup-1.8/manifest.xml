@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Linkup</name>
+	<author>Lorea Developers</author>
+	<version>0.2.4</version>
+	<copyright>Lorea Faeries &lt;federation@lorea.org&gt;</copyright>
+	<category>lorea</category>
+	<category>usability</category>
+	<category>markup</category>
+	<blurb>Provide simple markup to interconnect arbitrary entities across the Elgg site.</blurb>
+	<description>
+    	Allow simple markup to link arbitrary entities across Elgg
+    	modules. See README.txt for details.
+	</description>
+	<website>https://lorea.org/plugin/linkup</website>
+	<bugtracker>https://n-1.cc/tasks/view/1566412/linkup</bugtracker>
+	<repository>https://gitorious.org/lorea/linkup</repository>
+	<donations>https://lorea.org/support</donations>
+	<license>GNU Affero General Public License version 3, or later</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>libxml</name>
+	</requires>
+	<suggests>
+		<type>plugin</type>
+		<name>group_alias</name>
+	</suggests>
+	<suggests>
+		<type>plugin</type>
+		<name>tasks</name>
+	</suggests>
+</plugin_manifest>

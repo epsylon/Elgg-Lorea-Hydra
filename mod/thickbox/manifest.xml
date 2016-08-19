@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Justin Richer" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Thickbox Javascript Library" />
+        <field key="website" value="http://www.mitre.org/" />
+        <field key="copyright" value="2010 The MITRE Corporation" />
+	<field key="license" value="GNU GPLv2" />
+	<field key="elgg_version" value="2010030101" />
+</plugin_manifest>

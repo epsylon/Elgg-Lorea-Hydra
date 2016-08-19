@@ -1,0 +1,12 @@
+
+= Favourites plugin for Elgg 1.8 =
+
+ This plugin is based on likes plugin of Elgg core. It was created in the need of separate like and favourite actions.
+
+
+==  Version 1.0.0 ==
+=== New features: ===
+* Mark items as favourite action in river and entity menus
+* Show number of favourite markings on object in river and entity menus
+* Plugin hook handler allowing user to unregister/alter menu items
+* Plugin setting to control which object subtypes can be marked as favourites

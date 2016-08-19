@@ -1,0 +1,7 @@
+== Version History ==
+
+x.x:
+
+2.0.0 (10/23/2015):
+ - Elgg 1.9 upgrade
+ - general code cleanup

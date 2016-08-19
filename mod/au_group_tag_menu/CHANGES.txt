@@ -1,0 +1,10 @@
+== Version History ==
+
+x.x:
+
+1.1.0 (10/23/2015):
+ - Elgg 1.9+ upgrade
+ - general code cleanup
+
+1.01 ():
+ - fixes sort order for user-specified tags
